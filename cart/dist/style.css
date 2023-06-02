@@ -1,0 +1,97 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  font-family: "Lato", 微軟正黑體, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4D1AE;
+}
+
+#buylist {
+  display: inline-block;
+  padding: 20px;
+  background-color: #F4EDEA;
+  border: 4px solid #12263A;
+}
+
+h1 {
+  padding: 20px;
+  margin-top: -25px;
+  margin-left: -25px;
+  margin-right: -25px;
+  background-color: #62937A;
+  text-align: center;
+  color: #F5F5F5;
+  border: 4px solid #12263A;
+}
+
+#item_list {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.buy_item {
+  padding: 5px;
+  list-style: none;
+  margin-top: 10px;
+  font-weight: 900;
+  border: 3px solid #06bcc1;
+}
+.buy_item input {
+  padding: 2px;
+  display: inline-block;
+  border: 3px solid #06bcc1;
+  background: transparent;
+}
+.buy_item .price {
+  position: absolute;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  right: 50px;
+  background-color: #4485C5;
+  color: #F5F5F5;
+}
+.buy_item .price::after {
+  content: "$";
+}
+.buy_item .del_btn {
+  padding: 0px 5px;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.buy_item .del_btn:hover {
+  color: #e84118;
+}
+.buy_item .addbtn {
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+  border: solid 3px #06bcc1;
+}
+.buy_item .addbtn:hover {
+  background: #e84118;
+  color: #ffffff;
+}
+
+.contral_panal {
+  padding: 20px;
+}
+
+.total {
+  background-color: #62937A;
+  color: #F5F5F5;
+  font-size: 20px;
+}
+.total .price {
+  background-color: #e84118;
+}

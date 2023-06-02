@@ -1,0 +1,85 @@
+$color-green: #62937A
+$color-black: #12263A
+$color-pink: #F4EDEA
+$color-light-orange: #F4D1AE
+$color-egg-blue: #06bcc1
+$color-white-smoke: #F5F5F5
+$color-red: #e84118
+$color-stell-blue: #4485C5
+
+*
+	// border: 1px solid
+	position: relative
+	font-family: 'Lato',微軟正黑體, sans-serif
+
+html,body
+	width: 100%
+	height: 100%
+	margin: 0
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: $color-light-orange
+#buylist
+	display: inline-block
+	padding: 20px
+	background-color: $color-pink
+	border: 4px solid $color-black
+h1
+	padding: 20px
+	margin-top: -25px
+	margin-left: -25px
+	margin-right: -25px
+	background-color: $color-green
+	text-align: center
+	color: $color-white-smoke
+	border: 4px solid $color-black
+#item_list
+	margin-top: 10px
+	padding: 5px
+
+.buy_item
+	padding: 5px
+	list-style: none
+	margin-top: 10px
+	font-weight: 900
+	border: 3px solid $color-egg-blue
+	& input
+		padding: 2px
+		display: inline-block
+		border: 3px solid $color-egg-blue
+		background: transparent
+	& .price
+			position: absolute
+			display: inline-block
+			padding-left: 8px
+			padding-right: 8px
+			right: 50px
+			background-color: $color-stell-blue
+			color: $color-white-smoke
+			&::after
+				content:"$"
+	& .del_btn
+			padding: 0px 5px
+			display: inline-block
+			position: absolute
+			right: 10px
+			cursor: pointer
+			&:hover
+				color: $color-red
+	& .addbtn
+			cursor: pointer
+			padding: 5px
+			margin-left: 10px
+			border: solid 3px $color-egg-blue
+			&:hover
+				background: $color-red
+				color: #ffffff
+.contral_panal
+	padding: 20px
+.total
+	background-color: $color-green
+	color:$color-white-smoke
+	font-size: 20px
+	& .price
+		background-color: $color-red
